@@ -4,10 +4,11 @@ class C1 extends Component {
     render()
     {
         function ageCalculator(){
+             var userinput = document.getElementById("DOB").value;
              if(userinput==null || userinput=='') {      
                 return document.getElementById("result").innerHTML = "Choose a date please!!";;   
             }
-            var userinput = document.getElementById("DOB").value;
+           
             var dob = new Date(userinput);
 
             var month_diff = Date.now() - dob.getTime();
